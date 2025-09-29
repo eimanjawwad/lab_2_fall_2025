@@ -67,7 +67,7 @@ class ForwardKinematics(Node):
             raise NotImplementedError()
 
         # T_0_1 (base_link to leg_front_l_1)
-        T_0_1 = translation(0.07500, 0.0445, 0) @ rotation_x(-1.57080) @ rotation_z(theta1)
+        T_0_1 = translation(0.07500, 0.0445, 0) @ rotation_x(1.57080) @ rotation_z(-theta1)
 
         # T_1_2 (leg_front_l_1 to leg_front_l_2)
         ## TODO: Implement the transformation matrix from leg_front_l_1 to leg_front_l_2
