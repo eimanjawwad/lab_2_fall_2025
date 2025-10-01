@@ -99,7 +99,7 @@ class ForwardKinematics(Node):
         T_3_ee = translation(0.06231, -0.06216, -0.018) 
 
         # TODO: Compute the final transformation. T_0_ee is the multiplication of the previous transformation matrices
-        T_0_ee = T_0_1 @ T_1_2 @ T_2_3 @ T_3_ee
+        T_0_ee = None
 
         # TODO: Extract the end-effector position. The end effector position is a 3x1 vector (not in homogenous coordinates)
         end_effector_position = (T_0_ee @ np.array([0, 0.088, 1]))[0:2]
